@@ -1,0 +1,52 @@
+.our-services {
+    font-family: "Mulish", sans-serif;
+  
+    h1 {
+      color: #050a3a;
+      font-size: 2.5em;
+      font-weight: 700;
+      margin: 5%;
+    }
+  
+    .services-container {
+      display: flex;
+      flex-direction: row;
+  
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+  
+      .service-item {
+        flex: 1 1 calc(33.333% - 20px);
+  
+        img {
+          width: 480px;
+          height: 320px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .corp-parties{
+    font-family: "Mulish", sans-serif;
+  
+    h2 {
+      color: #050a3a;
+      font-size: 2.5em;
+      font-weight: 700;
+      margin: 5%;
+    }
+    p {
+      max-width: 50%;
+      margin-left: 5%;
+      margin-bottom: 2rem;
+  
+      @media (max-width: 600px) {
+        max-width: none;
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }

@@ -1,0 +1,22 @@
+.partners-content {
+    padding: rem(50);
+    
+    h1 {
+        @include heading1;
+        margin-left: rem(50);
+    }
+}
+
+.partners-images {
+    display: flex;
+    justify-content: flex-start; /* Aligne les images à gauche */
+    align-items: center;
+    margin-left: rem(50);
+
+    margin-bottom: rem(50);
+    margin-right: rem(50);
+
+    >*:not(:last-child) {
+        margin-right: rem(70); /* Augmente l'espace entre les images */
+    }
+}

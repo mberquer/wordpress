@@ -1,0 +1,37 @@
+.home-intro {
+    // @include flexbox(column, nowrap, center, center, rem(16));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        @include heading1;
+    }
+
+    .home-h1{
+        align-self: start;
+        margin-left: rem(100);
+        margin-bottom: rem(100);
+        h1:nth-child(2){
+          margin-top: rem(-70);
+          
+        }
+      }
+
+    
+
+    .home-image {
+        width: 70%;
+        height: auto;
+        right: 0;
+        align-self: end;
+        // justify-self: end;
+    }
+
+}
+
+.home-about-us,
+.home-services,
+.home-partners {
+    margin: rem(50);
+}

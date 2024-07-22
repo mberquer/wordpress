@@ -1,0 +1,128 @@
+$font1: 'Mulish', sans-serif;
+
+.contact-content {
+    margin-top: 20rem;
+    padding: rem(357);
+    font-family: $font1;
+
+    h1 {
+        @include heading1;
+        margin-left: rem(50);
+    }
+    h2 {
+        @include heading2;
+    }
+    
+}
+
+
+.infos-content {
+    display: flex;
+    flex-direction: row-reverse;
+    color: var(--grey);
+}
+
+
+.relative-container {
+    position: relative;
+    width: 100%;
+    /* Assure que le conteneur occupe toute la largeur disponible */
+}
+
+.absolute-right-image {
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    width: rem(1487);
+    height: rem(631);
+}
+
+.line {
+    border: 1px solid #e4e4e4;
+    margin: rem(20) 0;
+}
+
+.none {
+    border: none;
+    outline: none;
+}
+
+// agrandir la taille de la zone d'ecriture sans touche le placeholder
+.message-input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font1;
+
+    .rectangle {
+        width: 3px;
+        height: 18px;
+        background-color: var(--footer-bg-color); // Vous pouvez changer la couleur selon vos besoins
+        position: absolute;
+        left: 0;
+        top: 11px;
+    }
+
+    .message-label {
+        font-family: $font1;
+        color: var(--grey);
+        padding-left: 10px; // Ajoutez un padding pour faire de la place au rectangle
+        text-align: left;
+    }
+
+    .message-textarea {
+        width: 100%;
+        height: 100px;
+        padding-left: 10px; // Ajoutez un padding pour faire de la place au rectangle
+        padding-top: 2rem;
+        border: none;
+        outline: none;
+        resize: none;
+        color: var(--grey);
+    }
+}
+
+.submit-button {
+    background-color: var(--white); // Vous pouvez changer la couleur selon vos besoins
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: $font1;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: var(--footer-bg-color-hover); // Vous pouvez changer la couleur selon vos besoins
+    }
+}
+
+.company-info {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: rem(100) 0 ;
+}
+
+.location {
+    margin-bottom: 10px;
+    margin-right: rem(50);
+}
+
+.manager,
+.ceo {
+    margin-bottom: 20px;
+    margin-right: rem(50);
+}
+
+.phone,
+.email {
+    margin-right: rem(50);
+}
+
+.phone:before {
+    content: "Phone: ";
+}
+
+.email:before {
+    content: "Email: ";
+}

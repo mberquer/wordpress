@@ -1,0 +1,106 @@
+#site-footer {
+    @include flexbox(row, nowrap, space-between, center, rem(16));
+    padding: rem(40) rem(50);
+    width: 100%;
+    height: rem(300);
+    background-color: var(--footer-bg-color);
+    color: var(--white);
+
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        img {
+            width: auto;
+            height: rem(50); 
+            margin-bottom: rem(100); 
+            margin-left: rem(50);
+        }
+
+        .footer-text {
+            @include heading6;
+            color: white;
+            margin-top: rem(20); 
+            margin-left: rem(50);
+        }
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        margin-right: rem(50);
+
+        .footer-column {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: rem(50); 
+
+            .footer-title {
+                @include heading6;
+                color: white;
+                font-weight: bold;
+                margin-bottom: rem(10);
+            }
+
+            .footer-contact {
+                @include heading6;
+                color: white;
+                margin-bottom: rem(5);
+            }
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: flex-end;
+            gap: rem(20);
+            margin-top: rem(50); 
+
+            img {
+                width: rem(20);
+                height: rem(20);
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        @include flexbox(column, nowrap, flex-start, center, rem(16));
+        padding: rem(20) rem(25);
+        height: auto; // Adjust height to fit content
+
+        .footer-logo {
+            align-items: center;
+            margin-bottom: rem(20);
+
+            img {
+                margin-bottom: rem(20); 
+                margin-left: 0;
+            }
+
+            .footer-text {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+
+        .footer-info {
+            align-items: center;
+            text-align: center;
+            margin-right: 0;
+
+            .footer-column {
+                flex-direction: column;
+                align-items: center;
+                gap: rem(20); 
+            }
+
+            .footer-social {
+                justify-content: center;
+                margin-top: rem(20); 
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+$font1: "Mulish", sans-serif;
+
+@mixin heading1 {
+    font-family: $font1; 
+    font-size: rem(50); 
+    font-weight: 600; 
+    line-height: 105.42px; 
+    text-align: left; 
+	color: var(--footer-bg-color);
+
+}
+
+@mixin heading2 {
+    font-family: $font1; 
+    font-size: rem(30); 
+    font-weight: 600; 
+    line-height: 79.07px;
+    letter-spacing: 3px; 
+    text-align: left; 
+	color: var(--footer-bg-color);
+}
+
+@mixin heading3 {
+    font-family: 'Mulish', sans-serif; 
+    font-size: rem(25); 
+    font-weight: 600; 
+    line-height: 58.99px; 
+    text-align: left; 
+	color: var(--footer-bg-color);
+}
+
+@mixin heading4 {
+	font-family: $font1;
+	font-size: rem(16);
+	line-height: rem(27);
+	letter-spacing: 0.03em;
+	font-weight: 400;
+}
+
+@mixin heading6 {
+	font-family: $font1;
+	font-size: rem(13);
+	line-height: rem(21);
+	letter-spacing: 0.05em;
+	font-weight: 300;
+	color: #555;
+
+}
+
+@mixin p26 {
+    font-family: $font1;
+    font-size: rem(26);
+    font-weight: 400;
+    line-height: rem(42);
+    text-align: left;
+}
+
