@@ -41,7 +41,7 @@
             <?php
                 wp_nav_menu(
                     array(
-                        'theme_location' => 'primary_menu',
+                        'theme_location' => 'header_menu',
                         'container' => false,
                         'menu_class' => 'mobile-menu-list',
                     )

@@ -34,7 +34,7 @@ add_action('after_setup_theme', 'esgi_register_nav_menu', 0);
 function esgi_register_nav_menu()
 {
     register_nav_menus([
-        'primary_menu' => __('Primary Menu', 'ESGI'),
+        'header_menu' => __('Header Menu', 'ESGI'),
         'footer_menu' => __('Footer Menu', 'ESGI'),
     ]);
 }
